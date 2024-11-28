@@ -1,11 +1,189 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Responsive Website</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="./css/stylesheet.css">
 </head>
+
 <body>
-    <h1>this is my project</h1>
+
+     <!-- Navigation Bar -->
+     <header>
+        <nav class="navbar">
+                <input type="checkbox" id="menu-toggle">
+                <label for="menu-toggle" class="hamburger">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </label>
+            <div class="container-wrapper">
+            <div class="logo">
+                <a href="#">RUN MY <br>ERRANDS</a>
+                <img src="./images/logo.png" alt="logo">
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home" class="active">HOME</a></li>
+                <li><a href="#profile">PROFILE</a></li>
+                <li><a href="#services">SERVICES</a></li>
+                <li><a href="#contact">CONTACT</a></li>
+            </ul>
+            <div class="button-container">
+                <button>HIRE US</button>
+            </div>
+        </div>
+        </nav>
+    </header>
+
+    <!-- Hero Banner -->
+
+    <section id="hero">
+        <div class="hero-container-wrapper">
+        <div class="hero-content">
+            <h1>RUN YOUR ERRANDS IN NO TIME!</h1>
+            <p>Whatever the chores may be, be it a delivery, pet care, services, Everything can be easily customized and done.</p>
+            <div class="button">
+            <a href="#profile" class="btn-primary">HOW WE WORK</a>
+        </div>
+        </div>
+    </div>
+    </section>
+
+
+    <!-- Profile Cards Section -->
+    <section id="profile">
+        <div class="container">
+            <h1>Meet the Team</h1>
+            <p>RUN MY ERRAND has years of experience with providing wide area of specialty services works</p>
+            <div class="card-container">
+                <!-- Card 1 -->
+                <div class="card">
+                    <img src="./images/dogwalking.jpg" alt="Profile 1">
+                    <h3>John Doe</h3>
+                    <p>DOG WALKER</p>
+                    <p>I understand how important your dog's happiness and health are, which is why I offer personalized, flexible walking services to suit your dog's needs. </p>
+                    <div class="review">
+                        <span class="star filled">★</span>
+                        <span class="star filled">★</span>
+                        <span class="star filled">★</span>
+                        <span class="star filled">★</span>
+                        <span class="star">★</span>
+                    </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="card">
+                    <img src="./images/laundry.jpg" alt="Profile 2">
+                    <h3>Jane Smith</h3>
+                    <p>LAUNDRY SERVICE</p>
+                    <p>Whether you're a busy professional, a parent, or just someone who doesn't have the time (or desire!) to do laundry, I'm here to help</p>
+                    <div class="review">
+                        <span class="star filled">★</span>
+                        <span class="star filled">★</span>
+                        <span class="star filled">★</span>
+                        <span class="star filled">★</span>
+                        <span class="star">★</span>
+                    </div>
+                </div>
+                <!-- Card 3 -->
+                <div class="card">
+                    <img src="./images/repair.jpg" alt="Profile 3">
+                    <h3>Mark Johnson</h3>
+                    <p>HANDY REPAIR MAN</p>
+                    <p>I'm your go-to handyman for all types of home repairs and maintenance. Having years of experience and a passion for problem-solving.</p>
+                    <div class="review">
+                        <span class="star filled">★</span>
+                        <span class="star filled">★</span>
+                        <span class="star filled">★</span>
+                        <span class="star filled">★</span>
+                        <span class="star filled">★</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+     <!-- Gallery Section -->
+     <section id="gallery">
+        <div class="left-container">
+            <div class="left-container-wrapper">
+                <div class="heading">
+            <div class="heading-one">
+                <p>Convenience: Save time and energy by delegating   your errands to reliable professionals.</p>
+            </div>
+            <div class="heading-two">
+                <p>Convenience: Save time and energy by delegating   your errands to reliable professionals.</p>
+            </div>
+            <div class="heading-three">
+                <p>Convenience: Save time and energy by delegating   your errands to reliable professionals.</p>
+            </div>
+        </div>
+        </div>
+        </div>
+        <div class="right-container">
+            <img src="../images/doordelivery.jpg" alt="Image1">
+            <img src="../images/computer.jpg" alt="Image2">
+            <img src="../images/driver.jpg" alt="Image3">
+            <img src="../images/handyman.jpg" alt="Image4">
+        <!--<img src="./images/handyman.jpg" alt="Image5">
+            <img src="./images/nanny.jpg" alt="Image6">-->
+        </div>
+    </section>
+
+
+    <!--sample section
+    <section class="sample">
+        <div class="photo-container">
+            <img src="./pic1.jpg" alt="Photo 1" class="photo photo1">
+            <img src="./pic2.jpg" alt="Photo 2" class="photo photo2">
+            <img src="./pic3.jpg" alt="Photo 3" class="photo photo3">
+            <img src="./pic1.jpg" alt="Photo 4" class="photo photo4">
+            <img src="./pic2.jpg" alt="Photo 5" class="photo photo5">
+        </div>
+    </section>-->
+
+    <!-- Body Section -->
+    <section id="services">
+        <div class="container">
+            <h2>My Services</h2>
+            <p>I offer a variety of services to help bring your vision to life online.</p>
+            <div class="services-list">
+                <div class="service">
+                    <h3>handy man</h3>
+                    <p>Building expert</p>
+                </div>
+                <div class="service">
+                    <h3>nanny</h3>
+                    <p>good with kids</p>
+                </div>
+                <div class="service">
+                    <h3>deliveryman</h3>
+                    <p>timely delivery/p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer id="contact">
+        <div class="container">
+            <p>&copy; 2024 My Portfolio | All Rights Reserved</p>
+            <p>Follow me on: 
+                <a href="#">Facebook</a> | 
+                <a href="#">Instagram</a> | 
+                <a href="#">Twitter</a>
+            </p>
+        </div>
+    </footer>
+
+    <div class="card-container">
+        <div class="image-container"></div>
+        <text-container></text-container>
+    </div>
+
 </body>
 </html>
