@@ -83,7 +83,7 @@ body {
     color: rgb(255, 255, 255);
     border: none;
     font-size: 16px;
-    border-radius: 24px;
+    border-radius: 4px;
 }
 
 .navbar .container-wrapper .button-container button:hover {
@@ -212,9 +212,13 @@ body {
     text-align: center;
 }
 
-#profile h2 {
-    font-size: 30px;
-    margin-bottom: 40px;
+#profile h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.container p {
+    margin-bottom: 30px;
 }
 
 #profile .container {
@@ -224,14 +228,29 @@ body {
     gap: 20px;
 }
 
-.container h1 {
-    font-size: 36px;
-}
-
 .card-container {
     display: flex;
     justify-content: center;
+    align-items: center;
     gap: 20px;
+    position: relative;
+}
+
+.arrow-left,
+.arrow-right {
+    font-size: 2rem;
+    color: #333;
+    cursor: pointer;
+}
+
+.arrow-left {
+    position: absolute;
+    left: -50px;
+}
+
+.arrow-right {
+    position: absolute;
+    right: -50px;
 }
 
 .card {
@@ -241,12 +260,6 @@ body {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     text-align: center;
     border-radius: 8px;
-}
-
-#profile .container .card-container .card:hover {
-    transform: scale(1.05);
-    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
-    transition-duration: 0.7s;
 }
 
 .card img {
@@ -275,9 +288,22 @@ body {
     color: rgb(255, 178, 0);
 }
 
+/* Responsive Design */
+@media (max-width: 768px) {
+    .card-container {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .arrow-left,
+    .arrow-right {
+        display: none;
+    }
+}
+
 /* Gallery container*/
 #gallery {
-    /*background-color: greenyellow;*/
+    background-color: white;
     height: auto;
     width: 100%;
     display: flex;
@@ -294,8 +320,9 @@ body {
     justify-content: center;
 }
 
-#gallery .left-container p{
-    font-size: 48px;
+#gallery .left-container p {
+    font-size: 70px;
+    font-weight: bold;
 }
 
 #gallery .left-container .left-container-wrapper {
@@ -404,14 +431,14 @@ body {
 /* Services Section */
 
 #services {
-    /*background-color: #b02121;*/
-    padding: 50px 20px;
+    background-color: #b02121;
+    padding: 50px 20px; 
     text-align: center;
     background-color: #fff;
 }
 
 #services .container {
-    /*background-color: yellow;*/
+    /* background-color: yellow; */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -424,10 +451,11 @@ body {
 }
 
 .services-list {
-    /*background-color: aqua;*/
+    /* background-color: aqua; */
     display: flex;
     justify-content: space-around;
-    gap: 60px;
+    padding: 0 80px;
+    gap: 20px;
 }
 
 .service {
@@ -519,13 +547,15 @@ footer {
     font-size: 16px;
 }
 
-.container {
+footer .container {
     max-width: 1200px;
     margin: 0 auto;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     padding: 0 20px;
+    /* background-color: yellowgreen; */
+    border-bottom: 1px solid white;
 }
 
 .footer-section {
@@ -558,23 +588,7 @@ footer {
     color: #fff;
 }
 
-.contact {
-    display: block;
-    margin-bottom: 10px;
-    color: #ccc;
-    text-decoration: none;
-    font-size: 16px;
-}
-
-.country {
-    display: block;
-    margin-bottom: 10px;
-    color: #ccc;
-    text-decoration: none;
-    font-size: 16px;
-}
-
-.social-icon {
+.contact , .country , .social-icon{
     display: block;
     margin-bottom: 10px;
     color: #ccc;
@@ -609,11 +623,14 @@ footer {
 }
 
 .footer-bottom {
-    /*background-color: #222;*/
+    /* background-color: yellowgreen; */
     color: #ccc;
     text-align: center;
     padding: 10px 0;
     margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .footer-bottom p {
