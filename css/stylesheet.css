@@ -401,22 +401,25 @@ body {
 /* Services Section */
 
 #services {
-    background-color: #f9f9f9;
+    background-color: #b02121;
     padding: 50px 20px;
     text-align: center;
+}
+#services .container{
+    background-color: yellow;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 #services h2 {
     font-size: 30px;
     margin-bottom: 20px;
-}
-
-#services p {
-    font-size: 18px;
-    margin-bottom: 40px;
+    justify-content: center;
 }
 
 .services-list {
+    background-color: aqua;
     display: flex;
     justify-content: space-around;
     gap: 20px;
@@ -442,7 +445,7 @@ body {
 
 
 /* Footer */
-footer {
+/*footer {
     background-color: #333;
     color: white;
     text-align: center;
@@ -460,6 +463,135 @@ footer a {
 
 footer a:hover {
     text-decoration: underline;
+}*/
+
+footer {
+    background-color: rgb(22, 4, 63);
+    color: white;
+    padding: 40px 0;
+    font-size: 16px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+
+.footer-section {
+    flex: 1 1 200px;
+    margin: 10px;
+}
+
+.footer-section h3 {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.footer-section p, .footer-section ul, .footer-section a {
+    color: #ccc;
+    text-decoration: none;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin: 5px 0;
+}
+
+.footer-section a:hover {
+    color: #fff;
+}
+
+.contact {
+    display: block;
+    margin-bottom: 10px;
+    color: #ccc;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.country {
+    display: block;
+    margin-bottom: 10px;
+    color: #ccc;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.social-icon {
+    display: block;
+    margin-bottom: 10px;
+    color: #ccc;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.social-icon i {
+    margin-right: 8px;
+}
+
+.social-icon:hover {
+    color: #fff;
+}
+
+.store-link {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #ccc;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+.store-link i {
+    margin-right: 8px;
+    font-size: 24px;
+}
+
+.store-link:hover {
+    color: #fff;
+}
+
+.footer-bottom {
+    /*background-color: #222;*/
+    color: #ccc;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 20px;
+}
+
+.footer-bottom p {
+    margin: 0;
+    font-size: 14px;
+}
+
+.footer-bottom p:hover {
+    color: #fff;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-section {
+        flex: 1 1 100%;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .store-link {
+        justify-content: center;
+    }
 }
 
 /* Media query- Navbar */
