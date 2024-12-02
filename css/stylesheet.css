@@ -245,12 +245,12 @@ body {
 
 .arrow-left {
     position: absolute;
-    left: -50px;
+    left: 50px;
 }
 
 .arrow-right {
     position: absolute;
-    right: -50px;
+    right: 50px;
 }
 
 .card {
@@ -288,7 +288,7 @@ body {
     color: rgb(255, 178, 0);
 }
 
-/* Responsive Design */
+/* Responsive -profile */
 @media (max-width: 768px) {
     .card-container {
         flex-direction: column;
