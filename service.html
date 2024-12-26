@@ -1,117 +1,252 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Responsiv Website</title>
+    <title>Responsive Website</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="./css/service.css">
+    <link rel="stylesheet" href="./css/stylesheet.css">
 </head>
+
 <body>
-    
-    
-        <!-- Navigation Bar -->
-        <header>
-            <nav class="navbar">
-                <input type="checkbox" id="menu-toggle">
-                <label for="menu-toggle" class="hamburger">
-                    <div><li><a href="#home">HOME</a></li></div>
-                    <div><li><a href="#profile">PROFILE</a></li></div>
-                    <div><li><a href="#services">SERVICES</a></li></div>
-                    <div><li><a href="#contact">CONTACT</a></li></div>
-                </label>
-                <div class="container-wrapper">
-                    <div class="logo">
-                        <a href="#">RUN MY<br>ERRANDS</a>
-                        <img src="./images/logo.png" alt="logo">
+
+    <!-- Navigation bar -->
+    <header>
+        <nav class="navbar">
+            <input type="checkbox" id="menu-toggle">
+            <label for="menu-toggle" class="hamburger">
+                <div></div>
+                <div></div>
+                <div></div>
+            </label>
+            <div class="container-wrapper">
+                <div class="logo">
+                    <a href="#">RUN MY<br>ERRANDS</a>
+                    <img src="./images/logo.png" alt="logo">
+                </div>
+                <ul class="nav-links">
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="profile.html">PROFILE</a></li>
+                    <li><a href="#services" class="active">SERVICES</a></li>
+                    <li><a href="#contact">CONTACT</a></li>
+                </ul>
+                <div class="button-container">
+                    <button>SIGN UP / LOGIN</button>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Banner -->
+    <section id="hero">
+        <div class="hero-container-wrapper">
+            <div class="hero-content">
+                <h1>RUN YOUR ERRANDS IN NO TIME!</h1>
+                <p>Whatever the chores may be, be it a delivery, pet care, services, Everything can be easily customized
+                    and done.</p>
+                <div class="button">
+                    <a href="#profile" class="btn-primary">HOW WE WORK</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- category Section -->
+
+    <section class="picture-gallery">
+        <h1>POPULAR ERRANDS</h1>
+        <p>"Sign Up to Get Your Errands Done Easily -Quick and Reliable Service at Your Doorstep"</p>
+
+        <div class="grid-container">
+            <div class="grid-item">
+                <img src="./images/service-photos/errand1.png">
+                <p>Laundry</p>
+            </div>
+            <div class="grid-item">
+                <img src="./images/service-photos/errand2.png" alt="Image 2">
+                <p>Garden</p>
+            </div>
+            <div class="grid-item">
+                <img src="./images/service-photos/errand3.png" alt="Image 3">
+                <p>Online Booking</p>
+            </div>
+            <div class="grid-item">
+                <img src="./images/service-photos/errand4.png" alt="Image 4">
+                <p>Personal chef</p>
+            </div>
+            <div class="grid-item">
+                <img src="./images/service-photos/errand5.png" alt="Image 5">
+                <p>Nanny</p>
+            </div>
+            <div class="grid-item">
+                <img src="./images/service-photos/errand6.png" alt="Image 6">
+                <p>Car Service</p>
+            </div>
+            <div class="grid-item">
+                <img src="./images/service-photos/errand7.png" alt="Image 7">
+                <p>kerb side pickup</p>
+            </div>
+            <div class="grid-item">
+                <img src="./images/service-photos/errand8.png" alt="Image 8">
+                <p>Dog playdate</p>
+            </div>
+            <div class="grid-item">
+                <img src="./images/service-photos/errand9.png" alt="Image 9">
+                <p> Movers</p>
+            </div>
+            <div class="grid-item">
+                <img src="./images/service-photos/errand10.png" alt="Image 10">
+                <p>Training</p>
+            </div>
+            <div class="grid-item">
+                <img src="./images/service-photos/errand11.png" alt="Image 11">
+                <p>Dog walking</p>
+            </div>
+            <div class="grid-item">
+                <img src="./images/service-photos/errand12.png" alt="Image 12">
+                <p>Midnight Delivery</p>
+            </div>
+        </div>
+
+        <button class="category-btn">See More</button>
+    </section>
+
+    <!-- chat section -->
+    <section class="chat-section">
+        <div class="chat-wrapper">
+            <div class="chat-container">
+                <h2>CHAT WITH US</h2>
+                <p>"Need assistance with an errand? Chat with our runners for real-time updates, questions, or requests.
+                    Our team is ready to help you with anything, ensuring a smooth and efficient experience."</p>
+                <div class="chat-box-container">
+                    <div class="chat-box">
+                        <!-- Customer's messages -->
+                        <div class="message customer">
+                            <div class="message-content">
+                                <p>Hello, I need help with my order.</p>
+                            </div>
+                        </div>
+
+                        <!-- Worker’s response -->
+                        <div class="message worker">
+                            <div class="message-content">
+                                <p>Hi there! Sure, I'd be happy to help. What seems to be the problem?</p>
+                            </div>
+                        </div>
+
+                        <!-- Customer's follow-up -->
+                        <div class="message customer">
+                            <div class="message-content">
+                                <p>I received the wrong item. Can you assist me in returning it?</p>
+                            </div>
+                        </div>
+
+                        <!-- Worker’s response -->
+                        <div class="message worker">
+                            <div class="message-content">
+                                <p>I'm sorry to hear that! I can help you with the return process. Could you please
+                                    provide your order number?</p>
+                            </div>
+                        </div>
+
+                        <!-- Customer’s response -->
+                        <div class="message customer">
+                            <div class="message-content">
+                                <p>Sure! The order number is #12345.</p>
+                            </div>
+                        </div>
+
+                        <!-- Worker’s response -->
+                        <div class="message worker">
+                            <div class="message-content">
+                                <p>Thank you! I've found your order. We'll arrange for the return shipping. You should
+                                    receive a return label shortly.</p>
+                            </div>
+                        </div>
                     </div>
-                    <ul class="nav-links">
-                        <li><a href="index.html">HOME</a></li>
-                        <li><a href="profile.html">PROFILE</a></li>
-                        <li><a href="#services"
-                        class="active">SERVICES</a></li>
-                        <li><a href="#contact">CONTACT</a></li>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- App section starts -->
+    <section class="app-section">
+        <div class="app-wrapper">
+            <h2>OUR MOBILE APP</h2>
+            <P>"Stay connected and manage your errands on-the-go with our mobile app! Track requests, communicate with
+                runners, make payments, and get real-time updates—all from the convenience of your smartphone."</P>
+            <div class="app-photos">
+                <div class="photo">
+                    <img src="./images/app-photos/app1.jpg" alt="Photo 1">
+                </div>
+                <div class="photo">
+                    <img src="./images/app-photos/app3.jpg" alt="Photo 2">
+                </div>
+                <div class="photo">
+                    <img src="./images/app-photos/app2.jpg" alt="Photo 3">
+                </div>
+            </div>
+        </div>
+    </section>
+        <!-- Footer Section -->
+        <footer class="footer">
+            <div class="footer-container">
+                <div class="footer-section contact-us">
+                    <h3>CONTACT US</h3>
+                    <a href="#" class="contact">Email: contact@runmyerrands.com</a>
+                    <a href="#" class="contact">Phone: +91 81029 81029</a>
+                </div>
+    
+                <div class="footer-section legal">
+                    <h3>LEGAL</h3>
+                    <ul>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
                     </ul>
-                    <div class="button-container">
-                        <button>SIGN UP / LOGIN</button>
-                    </div>
                 </div>
-            </nav>
-        </header>
-        
     
-        <!-- Hero Banner -->
-        <section id="hero">
-            <div class="hero-container-wrapper">
-                <div class="hero-content">
-                    <h1>RUN YOUR ERRANDS IN NO TIME!</h1>
-                    <p>Whatever the chores may be, be it a delivery, pet care, services, Everything can be easily customized
-                        and done.</p>
-                    <div class="button">
-                        <a href="#profile" class="btn-primary">HOW WE WORK</a>
-                    </div>
+                <div class="footer-section company">
+                    <h3>COMPANY</h3>
+                    <ul>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Careers</a></li>
+                    </ul>
+                </div>
+    
+                <div class="footer-section available-in">
+                    <h3>AVAILABLE IN</h3>
+                    <a href="#" class="country">India</a>
+                    <a href="#" class="country">UK</a>
+                    <a href="#" class="country">US</a>
+                    <a href="#" class="country">Australia</a>
+                </div>
+    
+                <div class="footer-section social-links">
+                    <h3>FOLLOW US</h3>
+                    <a href="https://www.facebook.com/" target="_blank" class="social-icon"><i class="bi bi-facebook"></i>
+                        Facebook</a>
+                    <a href="https://www.instagram.com/" target="_blank" class="social-icon"><i class="bi bi-instagram"></i>
+                        Instagram</a>
+                    <a href="https://x.com/" target="_blank" class="social-icon"><i class="bi bi-twitter-x"></i>
+                        Twitter-x</a>
+                </div>
+    
+                <div class="footer-section download-links">
+                    <h3>DOWNLOAD OUR APP</h3>
+                    <a href="https://r.search.yahoo.com/_ylt=AwrKHAWwHWtn9AIAH6S7HAx.;_ylu=Y29sbwNzZzMEcG9zAzEEdnRpZAMEc2VjA3Ny/RV=2/RE=1736282801/RO=10/RU=https%3a%2f%2fplay.google.com%2f/RK=2/RS=LiY57EEKbMz_Dxvr5HubxwQuwfU-"
+                        target="_blank" class="store-link">
+                        <i class="bi bi-google-play"></i>
+                        Google Play
+                    </a>
                 </div>
             </div>
-        </section>
-
-        <!-- category Section -->
-
-        <section class="picture-gallery">
-            <h1>Our Picture Gallery</h1>
-            <h2>Explore the latest collection</h2>
-        
-            <div class="grid-container">
-              <div class="grid-item">
-                <img src="images/profile-photos/">
-                <p>Description for Image 1</p>
-              </div>
-              <div class="grid-item">
-                <img src="./images/profile-photos/" alt="Image 2">
-                <p>Description for Image 2</p>
-              </div>
-              <div class="grid-item">
-                <img src="https://via.placeholder.com/300" alt="Image 3">
-                <p>Description for Image 3</p>
-              </div>
-              <div class="grid-item">
-                <img src="https://via.placeholder.com/300" alt="Image 4">
-                <p>Description for Image 4</p>
-              </div>
-              <div class="grid-item">
-                <img src="https://via.placeholder.com/300" alt="Image 5">
-                <p>Description for Image 5</p>
-              </div>
-              <div class="grid-item">
-                <img src="https://via.placeholder.com/300" alt="Image 6">
-                <p>Description for Image 6</p>
-              </div>
-              <div class="grid-item">
-                <img src="https://via.placeholder.com/300" alt="Image 7">
-                <p>Description for Image 7</p>
-              </div>
-              <div class="grid-item">
-                <img src="https://via.placeholder.com/300" alt="Image 8">
-                <p>Description for Image 8</p>
-              </div>
-              <div class="grid-item">
-                <img src="https://via.placeholder.com/300" alt="Image 9">
-                <p>Description for Image 9</p>
-              </div>
-              <div class="grid-item">
-                <img src="https://via.placeholder.com/300" alt="Image 10">
-                <p>Description for Image 10</p>
-              </div>
-              <div class="grid-item">
-                <img src="https://via.placeholder.com/300" alt="Image 11">
-                <p>Description for Image 11</p>
-              </div>
-              <div class="grid-item">
-                <img src="https://via.placeholder.com/300" alt="Image 12">
-                <p>Description for Image 12</p>
-              </div>
+    
+            <!-- Copyright Section -->
+            <div class="footer-bottom">
+                <p>© 2024 Run my Errands. All Rights Reserved.</p>
             </div>
-        
-            <button class="category-btn">See More</button>
-          </section>
+        </footer>
 </body>
 </html>

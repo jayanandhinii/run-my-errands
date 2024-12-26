@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,15 +12,14 @@
 
 <body>
 
-    <!-- Navigation Bar -->
+    <!-- Navigation bar -->
     <header>
         <nav class="navbar">
             <input type="checkbox" id="menu-toggle">
             <label for="menu-toggle" class="hamburger">
-                <div><li><a href="#home" class="active">HOME</a></li></div>
-                <div><li><a href="profile.html">PROFILE</a></li></div>
-                <div><li><a href="service.html">SERVICES</a></li></div>
-                <div><li><a href="#contact">CONTACT</a></li></div>
+                <div></div>
+                <div></div>
+                <div></div>
             </label>
             <div class="container-wrapper">
                 <div class="logo">
@@ -27,9 +27,9 @@
                     <img src="./images/logo.png" alt="logo">
                 </div>
                 <ul class="nav-links">
-                    <li><a href="#home" class="active">HOME</a></li>
+                    <li><a href="index.html" class="active">HOME</a></li>
                     <li><a href="profile.html">PROFILE</a></li>
-                    <li><a href="./service.html">SERVICES</a></li>
+                    <li><a href="service.html">SERVICES</a></li>
                     <li><a href="#contact">CONTACT</a></li>
                 </ul>
                 <div class="button-container">
@@ -38,7 +38,6 @@
             </div>
         </nav>
     </header>
-    
 
     <!-- Hero Banner -->
     <section id="hero">
@@ -61,10 +60,8 @@
             <p>RUN MY ERRAND has years of experience with providing wide area of specialty services works</p>
 
             <!-- Card Container with Arrows -->
+            <i class="bi bi-caret-left-fill"></i>
             <div class="card-container">
-                <!-- Left Arrow -->
-                <i class="bi bi-arrow-left-circle arrow-left"></i>
-
                 <!-- Card 1 -->
                 <div class="card">
                     <img src="./images/dogwalking.jpg" alt="Profile 1">
@@ -112,13 +109,13 @@
                         <span class="star filled">★</span>
                     </div>
                 </div>
-
-                <!-- Right Arrow -->
-                <i class="bi bi-arrow-right-circle arrow-right"></i>
             </div>
+            <br>
+            <br>
+            <i class="bi bi-caret-right-fill"></i>
         </div>
     </section>
-
+    
 
     <!-- Gallery Section -->
     <section id="gallery">
@@ -130,19 +127,19 @@
                         <!-- Name Field -->
                         <label for="name">Full Name</label>
                         <input type="text" id="name" name="name" placeholder="Enter your full name" required>
-            
+
                         <!-- Email Field -->
                         <label for="email">Email Address</label>
                         <input type="email" id="email" name="email" placeholder="Enter your email address" required>
-            
+
                         <!-- Phone Number Field -->
                         <label for="phone">Phone Number</label>
                         <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required>
-            
+
                         <!-- Preferred Date and Time Field -->
                         <label for="date">Preferred Date and Time</label>
                         <input type="datetime-local" id="date" name="date" required>
-            
+
                         <!-- Errand Type Dropdown -->
                         <label for="errand">Errand Type</label>
                         <select id="errand" name="errand" required>
@@ -155,20 +152,21 @@
                             <option value="laundry">Laundry Service</option>
                             <option value="other">Other</option>
                         </select>
-            
+
                         <!-- Location Field -->
                         <label for="location">Location</label>
                         <input type="text" id="location" name="location" placeholder="Enter your location" required>
-            
+
                         <!-- Additional Details / Comment Box -->
                         <label for="details">Additional Details</label>
-                        <textarea id="details" name="details" placeholder="Please mention other details or services" rows="4"></textarea>
-            
+                        <textarea id="details" name="details" placeholder="Please mention other details or services"
+                            rows="4"></textarea>
+
                         <!-- Submit Button -->
                         <button type="submit">Submit</button>
                     </form>
                 </div>
-        </div>
+            </div>
         </div>
         <div class="right-container">
             <img src="./images/computer.jpg" alt="Image1">
@@ -179,88 +177,95 @@
     </section>
 
 
-    <!-- Body Section -->
+    <!-- Service Section -->
     <section id="services">
+        <div class="service-wrapper">
         <div class="container">
             <h2>HOW IT WORKS</h2>
+        </div>
+        <div class="services-list">
+            <div class="service">
+                <img src="./images/step-1.png" alt="image 1" class="steps">
+                <h3>Step-1</h3>
+                <p>You open the app, post the errand you need help with — whether it's short-term care, errands, or
+                    small tasks.</p>
             </div>
-            <div class="services-list">
-                <div class="service">
-                    <img src="./images/step-1.png" alt="image 1" class="steps">
-                    <h3>Step-1</h3>
-                    <p>You open the app, post the errand you need help with — whether it's short-term care, errands, or
-                        small tasks.</p>
-                </div>
-                <div class="service">
-                    <img src="./images/step-2.png" alt="image 2" class="steps">
-                    <h3>Step-2</h3>
-                    <p>Instantly see a list of trusted, available helpers.</p>
-                </div>
-                <div class="service">
-                    <img src="./images/step-3.png" alt="image 3" class="steps">
-                    <h3>Step-3</h3>
-                    <p>You can choose based on ratings, availability, and price, then securely pay and track your task's
-                        progress. It's that easy.</p>
-                </div>
+            <div class="service">
+                <img src="./images/step-2.png" alt="image 2" class="steps">
+                <h3>Step-2</h3>
+                <p>Instantly see a list of trusted, available helpers.</p>
+            </div>
+            <div class="service">
+                <img src="./images/step-3.png" alt="image 3" class="steps">
+                <h3>Step-3</h3>
+                <p>You can choose based on ratings, availability, and price, then securely pay and track your task's
+                    progress. It's that easy.</p>
             </div>
         </div>
+        </div>
+    </div>
     </section>
 
-
-    <!-- Footer Section -->
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-section contact-us">
-                <h3>CONTACT US</h3>
-                <a href="#" class="contact">Email: contact@runmyerrands.com</a>
-                <a href="#" class="contact">Phone: +91 81029 81029</a>
+        <!-- Footer Section -->
+        <footer class="footer">
+            <div class="footer-container">
+                <div class="footer-section contact-us">
+                    <h3>CONTACT US</h3>
+                    <a href="#" class="contact">Email: contact@runmyerrands.com</a>
+                    <a href="#" class="contact">Phone: +91 81029 81029</a>
+                </div>
+    
+                <div class="footer-section legal">
+                    <h3>LEGAL</h3>
+                    <ul>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                    </ul>
+                </div>
+    
+                <div class="footer-section company">
+                    <h3>COMPANY</h3>
+                    <ul>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Careers</a></li>
+                    </ul>
+                </div>
+    
+                <div class="footer-section available-in">
+                    <h3>AVAILABLE IN</h3>
+                    <a href="#" class="country">India</a>
+                    <a href="#" class="country">UK</a>
+                    <a href="#" class="country">US</a>
+                    <a href="#" class="country">Australia</a>
+                </div>
+    
+                <div class="footer-section social-links">
+                    <h3>FOLLOW US</h3>
+                    <a href="https://www.facebook.com/" target="_blank" class="social-icon"><i class="bi bi-facebook"></i>
+                        Facebook</a>
+                    <a href="https://www.instagram.com/" target="_blank" class="social-icon"><i class="bi bi-instagram"></i>
+                        Instagram</a>
+                    <a href="https://x.com/" target="_blank" class="social-icon"><i class="bi bi-twitter-x"></i>
+                        Twitter-x</a>
+                </div>
+    
+                <div class="footer-section download-links">
+                    <h3>DOWNLOAD OUR APP</h3>
+                    <a href="https://r.search.yahoo.com/_ylt=AwrKHAWwHWtn9AIAH6S7HAx.;_ylu=Y29sbwNzZzMEcG9zAzEEdnRpZAMEc2VjA3Ny/RV=2/RE=1736282801/RO=10/RU=https%3a%2f%2fplay.google.com%2f/RK=2/RS=LiY57EEKbMz_Dxvr5HubxwQuwfU-"
+                        target="_blank" class="store-link">
+                        <i class="bi bi-google-play"></i>
+                        Google Play
+                    </a>
+                </div>
             </div>
-
-            <div class="footer-section legal">
-                <h3>LEGAL</h3>
-                <ul>
-                    <li><a href="#">Privacy Policy</a></li>
-                    <li><a href="#">Terms of Service</a></li>
-                </ul>
-            </div>
-
-            <div class="footer-section company">
-                <h3>COMPANY</h3>
-                <ul>
-                    <li><a href="#">About Us</a></li>
-                    <li><a href="#">Careers</a></li>
-                </ul>
-            </div>
-
-            <div class="footer-section available-in">
-                <h3>AVAILABLE IN</h3>
-                <a href="#" class="country">India</a>
-                <a href="#" class="country">UK</a>
-                <a href="#" class="country">US</a>
-                <a href="#" class="country">Australia</a>
-            </div>
-
-            <div class="footer-section social-links">
-                <h3>FOLLOW US</h3>
-                <a href="https://www.facebook.com/" target="_blank" class="social-icon" ><i class="bi bi-facebook"></i> Facebook</a>
-                <a href="https://www.instagram.com/" target="_blank"class="social-icon"><i class="bi bi-instagram"></i> Instagram</a>
-                <a href="https://x.com/" target="_blank" class="social-icon"><i class="bi bi-twitter-x"></i> Twitter-x</a>
-            </div>
-
-            <div class="footer-section download-links">
-                <h3>DOWNLOAD OUR APP</h3>
-                <a href="https://r.search.yahoo.com/_ylt=AwrKHAWwHWtn9AIAH6S7HAx.;_ylu=Y29sbwNzZzMEcG9zAzEEdnRpZAMEc2VjA3Ny/RV=2/RE=1736282801/RO=10/RU=https%3a%2f%2fplay.google.com%2f/RK=2/RS=LiY57EEKbMz_Dxvr5HubxwQuwfU-" target="_blank" class="store-link">
-                    <i class="bi bi-google-play"></i>
-                    Google Play
-                </a>
-            </div>
-        </div>  
-
+    
             <!-- Copyright Section -->
             <div class="footer-bottom">
                 <p>© 2024 Run my Errands. All Rights Reserved.</p>
             </div>
-    </footer>
+        </footer>
+
 
 </body>
+
 </html>
