@@ -29,6 +29,14 @@ body {
     justify-content: space-between;
 }
 
+.navbar .container-wrapper label {
+    display: none;
+    /* color: black; */
+}
+
+.navbar .container-wrapper #hamburger {
+    display: none;
+}
 .navbar .logo {
     display: flex;
     align-items: center;
