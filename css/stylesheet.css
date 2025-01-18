@@ -76,15 +76,24 @@ body {
 }
 
 .navwrapper ul li a {
-    text-decoration: none;
+    text-decoration:none;
     color: rgb(22, 4, 63);
     font-weight: bold;
     font-size: 16px;
     transition: color 0.3s ease;
 }
 
+.navwrapper ul li a.active {
+    text-decoration: underline;
+    font-weight: bold;
+  }
+
 .navwrapper ul li a:hover {
-    color: darkblue;
+    color: white;
+    background-color: rgb(22, 4, 63);;
+    padding: 10px;
+    border-radius: 8px;
+    transition: all 0.5s ease;
 }
 
 .navbar .container-wrapper .button-container button {
@@ -321,7 +330,8 @@ body {
 .footer {
     background-color:rgb(22, 4, 63);
     color: #fff;
-    padding: 40px 20px;
+    /* padding: 40px 20px; */
+    margin-top: 40px;
     font-size: 16px;
     display: flex;
     flex-direction: column;
@@ -333,6 +343,7 @@ body {
     height: 100%;
     width: 80%;
     display: flex;
+    margin-top: 40px;
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: start;
