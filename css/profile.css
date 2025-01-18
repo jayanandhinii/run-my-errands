@@ -842,7 +842,7 @@ img {
 /* About expert starts */
 
 .projects {
-  /* background-color: pink; */
+  background-color: white;
   margin-top: 20px;
   display: flex;
   flex-direction: column;

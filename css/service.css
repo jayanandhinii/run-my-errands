@@ -329,7 +329,7 @@ body {
     text-align: center;
     margin: 20px;
     /* padding: 40px 20px; */
-    /* background-color: aqua; */
+    background-color: white;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -604,7 +604,7 @@ body {
 .app-section {
     height: auto;
     width: 100%;
-    /* background-color: purple; */
+    background-color: white;
     margin-top:20px;
     text-align: center;
     display: flex;
