@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="./css/test.css">
+<style>
+.navbar {
+    height: 70px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #e65c00;
+    transition: background-color 0.5s ease;
+}
+
+.navbar .container-wrapper {
+    height: 100%;
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: aqua;
+}
+
+.navwrapper {
+    width: 100%;
+    height: 100%;
+    background-color: antiquewhite;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    padding: 0 20px;
+}
+
+.navbar .logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+  
+.navbar .logo a {
+    color: rgb(22, 4, 63);
+    font-size: 16px;
+    text-decoration: none;
+    order: 1;
+    font-weight: 600;
+}
+  
+.navbar .container-wrapper .logo img {
+    height: 54px;
+    width: 54px;
+}
+
+.navwrapper ul {
+    display: flex;
+    gap: 50px;
+    margin: 0;
+    padding: 0;
+    transition: all 0.5s ease; /* Smooth transition */
+}
+
+.navwrapper ul li {
+    list-style: none;
+}
+
+.navwrapper ul li a {
+    text-decoration: none;
+    color: rgb(22, 4, 63);
+    font-weight: bold;
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+
+.navwrapper ul li a:hover {
+    color: darkblue;
+}
+
+.navbar .container-wrapper .button-container button {
+    padding: 10px 15px;
+    background-color: rgb(255, 151, 59);
+    color: rgb(255, 255, 255);
+    border: none;
+    font-size: 16px;
+    border-radius: 4px;
+    transition: all 0.3s ease; /* Smooth transition */
+}
+
+.navbar .container-wrapper .button-container button:hover {
+    background-color: #e65c00;
+    transform: scale(1.05);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+.navbar .container-wrapper .button-container button:active {
+    background-color: green;
+}
+
+.menu-toggle {
+    display: none; 
+}
+
+.hamburger {
+    display: none; 
+    font-size: 24px;
+    cursor: pointer;
+    color: rgb(22, 4, 63);
+}
+
+@media (max-width: 800px) {
+    .navwrapper ul {
+        display: none; 
+        flex-direction: column;
+        position: absolute;
+        top: 90px;
+        right: 0;
+        background-color: rgb(255, 151, 59);
+        width: 100%;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        transition: all 0.5s ease; /* Smooth transition */
+    }
+
+    .menu-toggle:checked + .hamburger + ul {
+        display: flex;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    .navwrapper ul li {
+        text-align: center;
+        padding: 10px 0;
+    }
+
+    /* Font and button size adjustments */
+    .navwrapper ul li a {
+        font-size: 14px; /* Smaller font size */
+    }
+
+    .navbar .container-wrapper .button-container button {
+        font-size: 14px; /* Smaller button font size */
+        padding: 8px 12px; /* Smaller button padding */
+    }
+}
+
+@media (max-width: 600px) {
+    .navwrapper ul li a {
+        font-size: 12px; /* Even smaller font size */
+    }
+
+    .navbar .container-wrapper .button-container button {
+        font-size: 12px; /* Even smaller button font size */
+        padding: 6px 10px; /* Even smaller button padding */
+    }
+
+    .navbar .logo a {
+        font-size: 12px; /* Smaller logo text size */
+    }
+
+    @media (max-width: 350px) {
+    .navwrapper ul li a {
+        font-size: 10px; /* Even smaller font size */
+    }
+
+    .navbar .container-wrapper .button-container button {
+        font-size: 10px; /* Even smaller button font size */
+        padding: 4px 6px; /* Even smaller button padding */
+    }
+
+    .navbar .logo img {
+       display: none;
+    }
+
+}
+}
+</style>
+</head>
+<body>
+    <!-- Navigation bar -->
+    <header>
+        <nav class="navbar">
+            <div class="container-wrapper">
+            <div class="navwrapper"> 
+                <input type="checkbox" id="menu-toggle" class="menu-toggle" />
+                <label for="menu-toggle" class="hamburger">☰</label>
+                <ul>
+                    <li><a href="#">HOME</a></li>
+                    <li><a href="./profile.html">PROFILE</a></li>
+                    <li><a href="./service.html">SERVICE</a></li>
+                    <li><a href="#">CONTACT</a></li>
+                </ul>
+                <div class="logo">
+                    <a href="#">RUN MY<br>ERRANDS</a>
+                    <img src="./images/logo.png" alt="logo">
+                </div>
+                <div class="button-container">
+                    <button>SIGN UP / LOGIN</button>
+                </div>
+            </div>
+        </div>  
+        </nav>
+    </header>
+</body>
+</html>
