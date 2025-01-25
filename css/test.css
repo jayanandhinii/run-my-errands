@@ -5,7 +5,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #e65c00;
+    /* background-color: #e65c00; */
   }
 
   .navbar .container-wrapper {
@@ -20,7 +20,7 @@
   .navwrapper {
     width: 100%;
     height: 100%;
-    background-color: antiquewhite;
+    /* background-color: antiquewhite; */
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -126,31 +126,82 @@
     color: rgb(22, 4, 63);
 }
 
-@media (max-width: 800px) {
-    .navwrapper ul {
-        display: none; 
-        flex-direction: column;
-        position: absolute;
-        top: 90px;
-        right: 0;
-        background-color: rgb(255, 151, 59);
-        width: 100%;
-        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    }
+/* Navbar Media query starts */
+@media (max-width: 980px) {
+  .navwrapper ul {
+      display: none; 
+      flex-direction: column;
+      position: absolute;
+      top: 90px;
+      right: 0;
+      background-color: rgb(255, 151, 59);
+      width: 100%;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      transition: all 0.5s ease;
+  }
 
-    .menu-toggle:checked + .hamburger + ul {
-        display: flex; 
-    }
+  .menu-toggle:checked + .hamburger + ul {
+      display: flex;
+  }
 
-    .hamburger {
-        display: block; 
-    }
+  .hamburger {
+      display: block;
+      position: absolute;
+      top: 20px; /* Align hamburger vertically */
+      right: 20px; /* Position hamburger at the right corner */
+  }
 
-    .navwrapper ul li {
-        text-align: center;
-        padding: 10px 0;
-    }
+  /* Center the logo */
+  .navbar .logo {
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+  }
+
+  .navwrapper ul li {
+      text-align: center;
+      padding: 10px 0;
+  }
+
+  .navwrapper ul li a {
+      font-size: 14px;
+  }
+
+  .navbar .container-wrapper .button-container button {
+      font-size: 14px;
+      padding: 8px 12px;
+  }
 }
+
+@media (max-width: 600px) {
+  .navwrapper ul li a {
+      font-size: 12px;
+  }
+
+  .navbar .container-wrapper .button-container button {
+      font-size: 12px;
+      padding: 6px 10px;
+  }
+
+  .navbar .logo a {
+      font-size: 12px;
+  }
+
+  @media (max-width: 510px) {
+  .navwrapper ul li a {
+      font-size: 10px;
+  }
+
+  .navbar .container-wrapper .button-container button {
+      font-size: 10px;
+      padding: 4px 6px;
+  }
+
+  .navbar .logo img {
+      display: none;
+  }
+}
+
 
 
 /* @media only screen and (max-width: 930px) {
